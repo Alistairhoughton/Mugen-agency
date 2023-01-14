@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="animation.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/expand.min.css"
@@ -15,28 +16,29 @@
     <header>
       <nav class="nav">
         <a href="">
-        <figure class="logo-container">
-          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
-          
-          <svg class="mugen-logo light"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-            x="0px"
-            y="0px"
-            width="100%"
-            height="100%"
-            viewBox="0 0 50.1 46.8"
-            style="enable-background: new 0 0 50.1 46.8"
-            xml:space="preserve"
-          >
-            <defs></defs>
-            <path
-              d="M46.5,0L25.1,17.8L3.5,0H0v46.8h50.1V0H46.5z M41.6,38.6h-33V16.1l16.5,14.3l16.5-14.3V38.6z"
-            />
-          </svg>
-        </figure>
+          <figure class="logo-container">
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
+
+            <svg
+              class="mugen-logo light"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              x="0px"
+              y="0px"
+              width="100%"
+              height="100%"
+              viewBox="0 0 50.1 46.8"
+              style="enable-background: new 0 0 50.1 46.8"
+              xml:space="preserve"
+            >
+              <defs></defs>
+              <path
+                d="M46.5,0L25.1,17.8L3.5,0H0v46.8h50.1V0H46.5z M41.6,38.6h-33V16.1l16.5,14.3l16.5-14.3V38.6z"
+              />
+            </svg>
+          </figure>
         </a>
 
         <div class="nav-container">
@@ -127,7 +129,8 @@
       <header class="nav-overlay-header">
         <figure class="logo-container">
           <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
-          <svg class="mugen-logo light"
+          <svg
+            class="mugen-logo light"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -146,28 +149,66 @@
             />
           </svg>
         </figure>
-          <button id="close-button" class="close-button">
-        <svg class="logo-x light-svg" id="" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                x="0px" y="0px" width="663.2px" height="663.2px" viewBox="0 0 663.2 663.2"
-                style="overflow:visible;enable-background:new 0 0 663.2 663.2;" xml:space="preserve">
-                <style type="text/css">
-                .st0{fill:none;stroke-width:76.0146;stroke-linecap:round;stroke-miterlimit:10;}
-                </style>
-                <defs>
-                </defs>
-                <line class="st0" x1="625.2" y1="50.7" x2="50.7" y2="625.2"/>
-                <line class="st0" x1="38" y1="38" x2="495.2" y2="495.2"/>
-                <line class="st0" x1="573" y1="573.5" x2="624.2" y2="624.7"/>
-                </svg>
-      </button>
+        <button id="close-button" class="close-button">
+          <svg
+            class="logo-x light-svg"
+            id=""
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px"
+            y="0px"
+            width="663.2px"
+            height="663.2px"
+            viewBox="0 0 663.2 663.2"
+            style="overflow: visible; enable-background: new 0 0 663.2 663.2"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: none;
+                stroke-width: 76.0146;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+              }
+            </style>
+            <defs></defs>
+            <line class="st0" x1="625.2" y1="50.7" x2="50.7" y2="625.2" />
+            <line class="st0" x1="38" y1="38" x2="495.2" y2="495.2" />
+            <line class="st0" x1="573" y1="573.5" x2="624.2" y2="624.7" />
+          </svg>
+        </button>
       </header>
-
-    
     </nav>
 
     <main class="portfolio">
-      <article class="section light" data-bg="#23b296">One</article>
+      <article class="section light" data-bg="#23b296">
+        <section class="hero-section">
+          <h1 class="title">
+            We are Mugen, a brand strategy <br />
+            and identity design studio
+          </h1>
+          <p class="sub-title">
+            We believe that great work comes from <br />
+            great working relationships.
+          </p>
+
+          <figure class="animation-position-container">
+            <figure  data-configuration="1" data-roundness="1" class="animation-container">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </figure>
+          </figure>
+
+
+        </section>
+      </article>
       <article class="section light" data-bg="#f15f61">Two</article>
       <article class="section light" data-bg="#DDBCF7">Three</article>
       <article class="section light" data-bg="#fca971">Four</article>
@@ -176,6 +217,7 @@
   <script src="index.js"></script>
   <script src="toggle.js"></script>
   <script src="navOverlay.js"></script>
+  <script src="animation.js"></script>
 </html>
 
 !
