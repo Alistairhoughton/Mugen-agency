@@ -160,6 +160,10 @@ body {
   justify-content: center;
 }
 
+.portfolio {
+  margin: 0 20% 0 20%;
+}
+
 .hero-section {
   width: 100%;
   height: 100vh;
@@ -167,9 +171,8 @@ body {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  padding-top: 18%;
   gap: 50px;
-  padding-top: 10%;
-  padding-left: 20%;
   position: relative;
   z-index: 2;
 }
@@ -183,7 +186,7 @@ p {
   position: absolute;
   z-index: 1;
   top: 26%;
-  right: 30%;
+  right: 17%;
 }
 
 .hero-section > * {
@@ -267,3 +270,8 @@ p {
 .logo-x:hover {
   transform: rotate(90deg);
 }
+
+
+/* media query notes  */
+
+/* use 3 rem for small devices on margin playaround */
