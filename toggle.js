@@ -13,11 +13,11 @@ toggleHandler = () => {
     setNav.style.backgroundColor = "#23b296";
   }
   if (toggle.checked === true) {
-    sections[0].setAttribute("data-bg", "#1A1C52");
-    sections[1].setAttribute("data-bg", "#1A1C52");
-    sections[2].setAttribute("data-bg", "#1A1C52");
-    sections[3].setAttribute("data-bg", "#1A1C52");
-    setNav.style.backgroundColor = "#1A1C52";
+    sections[0].setAttribute("data-bg", "#0D0E2F");
+    sections[1].setAttribute("data-bg", "#0D0E2F");
+    sections[2].setAttribute("data-bg", "#0D0E2F");
+    sections[3].setAttribute("data-bg", "#0D0E2F");
+    setNav.style.backgroundColor = "#0D0E2F";
   }
 
   onScroll();
