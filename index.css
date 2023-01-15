@@ -168,7 +168,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 50px;
-  padding-top: 8%;
+  padding-top: 10%;
   padding-left: 20%;
   position: relative;
   z-index: 2;
@@ -182,7 +182,7 @@ p {
 .animation-position-container {
   position: absolute;
   z-index: 1;
-  top: 24%;
+  top: 26%;
   right: 30%;
 }
 
