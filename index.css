@@ -15,7 +15,7 @@
   --seagreen: #23b296;
   --bgWhite: white;
   --bgBlack: black;
-  --textWhite: white;
+  --textWhite:var(--darkAccentOne);
   --textBlack: black;
   /* base vars */
 
