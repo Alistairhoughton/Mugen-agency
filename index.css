@@ -91,7 +91,7 @@ body {
 .logo-container {
   height: 50px;
   width: 150px;
-  padding: 10px;
+  padding: 0 1rem 0 1rem;
 }
 
 .logo-container:hover {
