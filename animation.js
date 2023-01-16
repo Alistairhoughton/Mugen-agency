@@ -21,12 +21,11 @@ const combinations = [
 let prev = 0;
 
 setInterval(() => {
+  const index = uniqueRand(0, combinations.length - 1),
+    combination = combinations[index];
 
-const index = uniqueRand(0, combinations.length - 1),
-combination = combinations[index]
-
-  wrapper.dataset.configuration = combination.configuration
-  wrapper.dataset.roundness = combination.roundness
+  wrapper.dataset.configuration = combination.configuration;
+  wrapper.dataset.roundness = combination.roundness;
 
   prev = index;
 }, 2000);

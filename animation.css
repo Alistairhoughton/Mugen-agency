@@ -21,11 +21,14 @@
   --redClay: #f28482;
   --airForceBlue: #93b7be;
   --navy: #2d3047;
+
+  /* dark mode color shape vars  */
+
+  
 }
 
+
 /* vars */
-
-
 
 .animation-container {
   aspect-ratio: 1.618;
@@ -44,30 +47,37 @@
 
 .animation-container > .shape:nth-child(1) {
   background-color: var(--offWhite);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(2) {
   background-color: var(--pastelGreen);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(3) {
   background-color: var(--redClay);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(4) {
   background-color: var(--salmon);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(5) {
   background-color: var(--tan);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(6) {
   background-color: var(--airForceBlue);
+  transition: ease 0.3s;
 }
 
 .animation-container > .shape:nth-child(7) {
   background-color: var(--navy);
+  transition: ease 0.3s;
 }
 
 /* data configs  */
@@ -199,7 +209,7 @@
 }
 
 .animation-container[data-configuration="3"] > .shape:nth-child(3) {
- left: 38%;
+  left: 38%;
   top: 0%;
   height: 100%;
   width: 62%;
@@ -239,44 +249,44 @@
 
 /* data roundness */
 
-.animation-container[data-roundness="1"] > .shape {   
-  border-radius: 6rem; 
+.animation-container[data-roundness="1"] > .shape {
+  border-radius: 6rem;
 }
 
-.animation-container[data-roundness="2"] > .shape {  
+.animation-container[data-roundness="2"] > .shape {
   border-radius: 0rem;
 }
 
-.animation-container[data-roundness="3"] > .shape {  
+.animation-container[data-roundness="3"] > .shape {
   border-radius: 30rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(1) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(1) {
   border-bottom-left-radius: 10rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(2) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(2) {
   border-radius: 20rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(3) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(3) {
   border-top-right-radius: 12rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(4) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(4) {
   border-top-right-radius: 10rem;
   border-bottom-right-radius: 10rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(5) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(5) {
   border-bottom-left-radius: 10rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(6) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(6) {
   border-top-left-radius: 16rem;
 }
 
-.animation-container[data-roundness="4"] > .shape:nth-child(7) {  
+.animation-container[data-roundness="4"] > .shape:nth-child(7) {
   border-top-left-radius: 10rem;
 }
 
