@@ -5,9 +5,11 @@ const lightsSvg = document.getElementsByClassName("light-svg");
 const setNav = document.getElementById("nav-overlay");
 const shapes = document.getElementsByClassName("shape");
 
+// logic to handle light/dark mode
+
 toggleHandler = () => {
   if (toggle.checked === false) {
-    sections[0].setAttribute("data-bg", "#23b296");
+    sections[0].setAttribute("data-bg", "var(--seagreen)");
     sections[1].setAttribute("data-bg", "#f15f61");
     sections[2].setAttribute("data-bg", "#DDBCF7");
     sections[3].setAttribute("data-bg", "#fca971");
@@ -27,7 +29,6 @@ toggleHandler = () => {
     sections[1].setAttribute("data-bg", "#0D0E2F");
     sections[2].setAttribute("data-bg", "#0D0E2F");
     sections[3].setAttribute("data-bg", "#0D0E2F");
-    setNav.style.backgroundColor = "#0D0E2F";
     shapes[0].style.backgroundColor = "#1e1c49";
     shapes[1].style.backgroundColor = "#535181";
     shapes[2].style.backgroundColor = "#3731AE";
@@ -35,11 +36,13 @@ toggleHandler = () => {
     shapes[4].style.backgroundColor = "#715E97";
     shapes[5].style.backgroundColor = "#535181";
     shapes[6].style.backgroundColor = "#252560";
+    setNav.style.backgroundColor = "#0D0E2F";
     localStorage.setItem("darkTheme", "enabled");
     console.log("darkTheme on");
   }
 
   onScroll();
+
   [...lights].forEach((el) => {
     el.classList.toggle("dark");
   });
@@ -48,6 +51,8 @@ toggleHandler = () => {
     el.classList.toggle("dark-svg");
   });
 };
+
+// logic to check which theme to use since it was set
 
 themeHandler = () => {
   const darkTheme = localStorage.getItem("darkTheme");
@@ -62,6 +67,7 @@ themeHandler = () => {
   }
 };
 
-window.onload = themeHandler();
+// event listeners
 
+document.addEventListener("DOMContentLoaded", themeHandler) 
 toggle.addEventListener("click", toggleHandler);
